@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard</title>
+    <link rel="stylesheet" href="/src/LeaderBoard.css">
+</head>
+
+<body>
+    <div class="container flex-center flex-column">
+        <div class="leaderboard">
+            <h1>
+                <svg class="ico-cup">
+                    <use xlink:href="#cup"></use>
+                </svg>
+                High Score Players
+            </h1>
+            <ol id="highScoresList"></ol>
+        </div>
+        <div>
+            <button class="btn" onclick="location.href = '/src/homePage.html';">Go Home</button>
+        </div>
+    </div>
+    <script src="/src/LeaderBoard.js"></script>
+</body>
+
+</html>
