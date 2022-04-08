@@ -1,9 +1,8 @@
 :root {
-    /*background-image: url("/images/background.jpg");
+    background-image: url("/images/background.jpg");
     background-position: center;
     background-size: 2200px;
-    background-repeat: no-repeat;*/
-    background-color: #333;
+    background-repeat: no-repeat;
     font-size: 62.5%;
 }
 
