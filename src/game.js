@@ -109,15 +109,13 @@ async function loadQuestion() {
         };
 
         const answerChoices = [...loadedQuestion.incorrect_answers];
-        formatQustion.answer = Math.floor(Math.random() * 3) + 1;
+        formatQustion.answer = Math.floor(Math.random() * 4 + 1);
         answerChoices.splice(formatQustion.answer - 1, 0, loadedQuestion.correct_answer);
-
         answerChoices.forEach((choice, index) => {
             formatQustion['choice' + (index + 1)] = choice;
         });
         return formatQustion;
     });
-
     startGame();
 }
 
