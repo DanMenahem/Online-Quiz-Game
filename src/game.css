@@ -1,0 +1,147 @@
+h1 {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 5rem;
+    width: 100%;
+    font-size: 2.3rem;
+    border: 0.1rem solid rgb(86, 165, 235, 0.25);
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 200ms;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #8e53aa;
+    border-radius: 5rem;
+    color: white;
+
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+    color: #333;
+}
+
+.left-choice {
+    margin-right: 3rem;
+}
+
+.right-choice {
+    margin-left: 3rem;
+}
+
+.correct {
+    background-color: #57da68;
+}
+
+.incorrect {
+    background-color: #dd4857;
+}
+
+#question {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid white;
+    border-radius: 1.2rem;
+    margin-top: 1.8rem;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: white;
+    width: 0%;
+}
+
+/* LOADER */
+
+#loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #e57ce0;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:600px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    #progressBar {
+        width: 10rem;
+        height: 2rem;
+    }
+
+    #progressBarFull {
+        height: 1.5rem;
+    }
+
+    .hud-prefix {
+        font-size: 1.3rem;
+
+    }
+
+    .choice-container {
+        display: flex;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .left-choice {
+        margin-right: 0.5rem;
+    }
+
+    .right-choice {
+        margin-left: 0.5rem;
+    }
+}
